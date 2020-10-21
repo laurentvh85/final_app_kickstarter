@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<img src = "../static/tq0sfld-kickstarter-logo-green.png" alt = "kickstarter logo" class="rounded mx-auto d-block">
+  
+<body>
+
+        <center>
+<br>
+<br>
+        <h1> Prediction Input Page</h1><br>
+        
+        <form method="POST", action="{{url_for('home')}}">
+           <b> Goal :  <input type="text", name='goal', placeholder="Goal in USD"> <br><br>
+              Blurb Length :  <input type="text", name='blurb', placeholder="Blurb length"> <br><br>
+             Creation Date : <input type="text", name='creation', placeholder="Date dd/mm/yyyy"> <br><br>
+             Launch Date: <input type="text", name='launch', placeholder="Date dd/mm/yyyy"> <br><br>
+             <label for="launchTime">Launch Time</label> 
+             <select id="launchTime" name="launchTime"> 
+               <option value="12am-2am">12am-2am</option> 
+               <option value="2am-4am">2am-4am</option> 
+               <option value="4am-6am">4am-6am</option> 
+               <option value="6am-8am">6am-8am</option> 
+               <option value="8am-10am">8am-10am</option> 
+               <option value="10am-12pm">10am-12pm</option> 
+               <option value="12pm-2pm">12pm-2pm</option> 
+               <option value="2pm-4pm">2pm-4pm</option>  
+               <option value="4pm-6pm">4pm-6pm</option> 
+               <option value="6pm-8pm">6pm-8pm</option> 
+               <option value="8pm-10pm">8pm-10pm</option> 
+               <option value="10pm-12am">10pm-12am</option> 
+             </select> 
+             <br>
+             <br>
+             
+             Deadline : <input type="text", name='deadline', placeholder="Date dd/mm/yyyy"> <br>
+             <br> <label for="deadlineTime">Deadline Time</label> 
+             <select id="deadlineTime" name="deadlineTime"> 
+              <option value="12am-2am">12am-2am</option> 
+              <option value="2am-4am">2am-4am</option> 
+              <option value="4am-6am">4am-6am</option> 
+              <option value="6am-8am">6am-8am</option> 
+              <option value="8am-10am">8am-10am</option> 
+              <option value="10am-12pm">10am-12pm</option> 
+              <option value="12pm-2pm">12pm-2pm</option> 
+              <option value="2pm-4pm">2pm-4pm</option>  
+              <option value="4pm-6pm">4pm-6pm</option> 
+              <option value="6pm-8pm">6pm-8pm</option> 
+              <option value="8pm-10pm">8pm-10pm</option> 
+              <option value="10pm-12am">10pm-12am</option> 
+             </select>  
+             <br><br>
+             <label for="category">Category</label> 
+             <select id="category" name="category"> 
+               <option value="Art">Art</option> 
+               <option value="Comics">Comics</option> 
+               <option value="Crafts">Crafts</option> 
+               <option value="Dance">Dance</option> 
+               <option value="Design">Design</option> 
+               <option value="Fashion">Fashion</option> 
+               <option value="Film">Film & video</option> 
+               <option value="Food">Food</option> 
+               <option value="Games">Games</option> 
+               <option value="Journalism">Journalism</option> 
+               <option value="Music">Music</option> 
+               <option value="Photography">Photography</option>
+               <option value="Publishing">Publishing</option>
+               <option value="Technology">Technology</option>
+               <option value="Theater">Theater</option>
+             </select> 
+             <br> <br>
+             <label for="country">Country</label> 
+             <select id="country" name="country"> 
+               <option value="Australia">Australia</option> 
+               <option value="Austria">Austria</option> 
+               <option value="Belgium">Belgium</option> 
+               <option value="Canada">Canada</option> 
+               <option value="Denmark">Denmark</option> 
+               <option value="France">France</option> q
+               <option value="Germany">Germany</option> 
+               <option value="Hong Kong">Hong Kong</option> 
+               <option value="Ireland">Ireland</option> 
+               <option value="Italy">Italy</option> 
+               <option value="Japan">Japan</option> 
+               <option value="Luxembourg">Luxembourg</option> 
+               <option value="Mexico">Mexico</option> 
+               <option value="New Zealand">New Zealand</option> 
+               <option value="Norway">Norway</option> 
+               <option value="Singapore">Singapore</option> 
+               <option value="Spain">Spain</option> 
+               <option value="Sweden">Sweden</option> 
+               <option value="Switzerland">Switzerland</option>   
+               <option value="the Netherlands">Netherlands</option> 
+               <option value="the United Kingdom">United Kingdom</option> 
+               <option value="the United States">United States</option> 
+             </select> 
+             <br>
+             
+             <br>
+            
+            <input type="submit" , value='predict!' >
+        </form>
+
+     
+        
+    </center>
+
+    </body>
+</html>
